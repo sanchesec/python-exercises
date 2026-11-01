@@ -1,0 +1,35 @@
+Meu racíocinio explicado de forma simples por IA:
+
+Entendendo a otimização da verificação de números primos
+
+*Explicação elaborada com auxílio de inteligência artificial, a partir do raciocínio desenvolvido durante o exercício.*
+
+Inicialmente, a ideia era verificar se um número é primo testando todos os possíveis divisores entre 2 e o número anterior a ele.
+
+Por exemplo, para verificar se **9 é primo**, testaríamos os números 2, 3, 4, 5, 6, 7 e 8. Como 9 é divisível por 3, sabemos que ele não é primo.
+
+Entretanto, existe uma maneira mais eficiente: **testar os divisores somente até a raiz quadrada do número**.
+
+### Por que isso funciona?
+
+Todo número composto pode ser representado pela multiplicação de dois fatores.
+
+Por exemplo:
+
+- 9 = 3 × 3
+- 35 = 5 × 7
+- 77 = 7 × 11
+
+Em qualquer multiplicação desse tipo, pelo menos um dos fatores será menor ou igual à raiz quadrada do número.
+
+Isso acontece porque, se ambos os fatores fossem maiores que a raiz quadrada, sua multiplicação seria maior que o próprio número.
+
+Portanto, se não encontrarmos nenhum divisor entre 2 e a raiz quadrada de um número maior que 1, podemos afirmar que ele é primo.
+
+### Conclusão
+
+Não precisamos verificar todos os números até `n - 1`, pois qualquer divisor maior que a raiz quadrada teria um fator correspondente menor que ela.
+
+Essa descoberta permite diminuir significativamente a quantidade de divisões realizadas pelo programa, tornando o algoritmo mais eficiente, especialmente para números grandes.
+
+**Aprendizado:** a otimização não altera o resultado do algoritmo. Ela apenas elimina verificações matematicamente desnecessárias.

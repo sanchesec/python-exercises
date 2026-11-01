@@ -1,0 +1,50 @@
+Raciocinio para entender:
+
+Em vez de testar divisores até n - 1, teste apenas até a raiz quadrada de n. Pense: por que isso é suficiente? O programa continua correto e fica bem mais rápido para números grandes.
+
+
+9 é primo? não, porque:
+
+pois uma dessas possibilidades de divisão ( 9 / (2,3,4,5,6,7, ou 8)  ) tem resto == 0, que é 9/3
+
+.
+.
+.
+
+Sendo:
+
+9^(1/2) == 3
+
+pois
+
+3 x 3 x 3 == 9
+
+então ele diz que ao invés de fazermos:
+
+( 9 / (2,3,4,5,6,7,8 ) )
+
+devemos fazer:
+
+( 9 / ( 2,3 )  )
+
+chegando no minimo multiplo comum, que significa 
+
+se qualquer numero da sequencia for divisivel por 9, o numero deixa de ser primo, tornando dispensável o os numeros adiantes que vem pela frente...
+
+OK !
+
+
+mas e se:
+
+Supondo que não sabemos se um numero é primo ou não...
+
+testamos os divesores para ver se há resto e paramos no da raiz quadrada do numero....
+vamos supor que ate esse momento, ele nao ache nenhum numero que é divisot do numero que queremos descobrir, ou seja, até agora o numero está sendo considerado primo 
+há possibilidade dos numeros adiante serem divisores dele? 
+
+---pesquisei e vi que não tem possibilidade de um numero ser primo e ter raiz exata
+
+
+
+
+
